@@ -1,0 +1,74 @@
+users
+	-ID
+	-nickname
+	-password
+	-salutation
+	-firstname
+	-lastname
+	-birthdate
+	-adress
+	-housenumber
+	-city
+	-postcode
+	-country
+	-role
+
+salutations
+	-ID
+	-name
+
+countrys
+	-ID
+	-name
+
+roles
+	-ID
+	-name
+
+articles
+	-ID
+	-title
+	-director
+	-genre
+	-runtime
+	-publisher
+	-agelimit
+	-releasedate
+	-publishingdate
+	-amount
+	-rentprice
+	-purchaseprice
+
+agelimits
+	-ID
+	-name
+
+directors
+	-ID
+	-firstname
+	-lastname
+
+publishers
+	-ID
+	-name
+
+genres
+	-ID
+	-name
+
+purchasesettlements
+	-ID
+	-purchasedarticles
+	-userID
+	-date
+	-purchasetype
+
+purchasedarticles
+	-ID
+	-user
+	-articles
+	-timestamp  ~(complete date and time)
+
+purchasetype
+	-ID
+	-name
