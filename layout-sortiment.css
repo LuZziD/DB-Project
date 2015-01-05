@@ -21,6 +21,7 @@ body {
     background-color: #ffffff;
     margin-left: 240px;
     margin-top: 1px;
+    
 }
 #container2 {
     width: 240px;
@@ -81,7 +82,7 @@ body {
 }
 #table {
     font-size: 0.85em;
-    width: 960px;
+    width: 1040px;
     height: 420px;
     border-bottom: 1px solid #00aedb;
 }
