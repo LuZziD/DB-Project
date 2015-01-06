@@ -79,26 +79,3 @@ body {
     text-align: center;
     border-bottom: 1px solid #00aedb;
 }
-a.reg {
-    list-style-type: none;
-	background-color:#ffffff;
-	border:1px solid #00aedb;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:arial;
-	font-size:16px;
-	padding:10px 20px;
-	text-decoration:none;
-    
-}
-a.reg:hover {
-	background: #00aedb;
-    border-color: #000;
-    border:1px solid #000;
-}
-a.reg:active {
-	position:relative;
-	top:1px;
-    background: #fff;
-}
