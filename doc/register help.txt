@@ -1,0 +1,24 @@
+
+
+Salutation muss ein auswahlfeld mit mann und herr erstellt werden, falls man ausgewählt wurde muss 1 und wenn frau ausgewählt wurde muss 2 übergeben werden
+user role ist standartmäßig auf 2 für normalen user
+country ist im moment noch eine nachschlage tabelle, ich glaube das muss nochmal besprochen werden. oder ich für alle länder ein aber das ist nervig und zeitaufwendig für euch später
+
+
+
+
+$user_salutation=$_POST['salutation'];
+$user_nickname=$_POST['nickname'];
+$user_password=$_POST['password'];
+$user_firstname=$_POST['firstname'];
+$user_lastname=$_POST['lastname'];
+$user_email=$_POST['emailaddress'];
+$user_adress=$_POST['address'];
+$user_housenumber=$_POST['housenumber'];
+$user_postcode=$_POST['postcode'];
+$user_country=$_POST['country'];
+$user_role=2;
+
+
+
+mysql_query("INSERT INTO users(user_salutation, user_nickname, user_password, user_firstname, user_lastname, user_adress, user_housenumber, user_city, user_postcode, user_country, user_role)VALUES('$user_salutation', '$user_nickname', '$user_password', '$user_firstname', '$user_lastname', '$user_email', '$user_adress', '$user_housenumber', '$user_postcode', '$user_country', '$user_role')");
