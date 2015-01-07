@@ -79,6 +79,11 @@ body {
     text-align: center;
     border-bottom: 1px solid #00aedb;
 }
+label {
+    width: 10em;
+    display: block;
+    float: left;
+}
 #input {
 font-size: 1.1em;
 width: 1000px;
