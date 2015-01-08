@@ -1,8 +1,5 @@
 
-
-Salutation muss ein auswahlfeld mit mann und herr erstellt werden, falls man ausgewählt wurde muss 1 und wenn frau ausgewählt wurde muss 2 übergeben werden
-user role ist standartmäßig auf 2 für normalen user
-country ist im moment noch eine nachschlage tabelle, ich glaube das muss nochmal besprochen werden. oder ich für alle länder ein aber das ist nervig und zeitaufwendig für euch später
+bezieht aus db salutation
 
 
 
