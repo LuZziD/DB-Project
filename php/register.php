@@ -35,12 +35,12 @@ if (($_POST['username']) != "" && ($_POST['password']) != "" && ($_POST['firstna
 <head>
     <title>Registrierung</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="layout-registrierung.css" type="text/css" />
+    <link rel="stylesheet" href="layout-registerphp.css" type="text/css" />
     <script src="jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-    <div id="kopf">
+    <div id="head">
         Registrierung
     </div>
     <div id="container2">
@@ -58,33 +58,37 @@ if (($_POST['username']) != "" && ($_POST['password']) != "" && ($_POST['firstna
         </div>
         <div id="container">
             <div id="content">
-                <-! >Hier fehlt noch die salutation, bitte adden</-!>
+                <!-- Hier fehlt noch die salutation, bitte adden -->
                 <h2 align="left">Registrierung</h2>
                 <form method="post" action="register.php">
-                    <div id="input">Benutzername
-                         <input size="50" name="username" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte einen Benutzernamen eingeben">
-                        <br>Passwort
-                         <input size="50" name="password" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="password" title="Bitte einPasswort eingeben">
-                        <br>Vorname
-                        <input size="50" name="firstname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte Ihren Vornamen eingeben">
-                        <br>Nachname
-                        <input size="50" name="lastname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte Ihren Nachnamen eingeben">
-                        <br>E-Mail Adresse
-                       <input size="50" name="email" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte ihre E-Mail Adresse eingeben">
-                        <br>Hausnummer
-                         <input size="50" name="housenumber" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte Ihre Hausnummer eingeben">
-                        <br>Stadt
-                         <input size="50" name="city" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte Ihre Stadt eingeben">
-                        <br>Land
-                        <input size="50" name="country" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" title="Bitte Ihr Land eingeben">
+                    <div id="input">
+						<label for="Benutzername">Benutzername</label>
+                        <input size="50" name="username" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte einen Benutzernamen eingeben" title="Bitte einen Benutzernamen eingeben">
+                        <br>
+                        <label for="Passwort">Passwort</label>
+                        <input size="50" name="password" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="password" placeholder="Bitte ein Passwort eingeben" title="Bitte einPasswort eingeben">
+                        <br>
+                        <label for="Vorname">Vorname</label>
+                        <input size="50" name="firstname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihren Vornamen eingeben" title="Bitte Ihren Vornamen eingeben">
+                        <br>
+                        <label for="Nachname">Nachname</label>
+                        <input size="50" name="lastname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihren Nachnamen eingeben" title="Bitte Ihren Nachnamen eingeben">
+                        <br>
+                        <label for="E-Mail Adresse">E-Mail Adresse</label>
+                        <input size="50" name="email" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihre E-Mail Adresse eingeben" title="Bitte ihre E-Mail Adresse eingeben">
+                        <br>
+                        <label for="Hausnummer">Hausnummer</label>
+                        <input size="50" name="housenumber" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihre Hausnummer eingeben" title="Bitte Ihre Hausnummer eingeben">
+                        <br>
+                        <label for="Stadt">Stadt</label>
+                        <input size="50" name="city" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihre Stadt eingeben" title="Bitte Ihre Stadt eingeben">
+                        <br>
+                        <label for="Land">Land</label>
+                        <input size="50" name="country" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihr Land eingeben" title="Bitte Ihr Land eingeben">
                         <br>
                         <br>
-                        
-                    </div>
-                    <div id="submit">
-						<input type="submit" name="submit" value="Benutzerkonto erstellen" />
-                        <a href="../php/register.php" style="color: #000000; text-decoration: none">Benutzerkonto erstellen</a>
-                    </div>
+                        </div>                  
+				<input id="submit" type="submit" name="submit" value="Benutzerkonto erstellen" />
                 </form>
             </div>
         </div>

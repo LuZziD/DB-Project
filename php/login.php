@@ -25,7 +25,7 @@ if (isset($_POST['username'])) {
 <head>
     <title>Kundenkonto</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="layout-kundenkonto.css" type="text/css" />
+    <link rel="stylesheet" href="layout-loginphp.css" type="text/css" />
     <script src="jquery-2.1.3.min.js"></script>
 </head>
 
@@ -51,14 +51,21 @@ if (isset($_POST['username'])) {
             <div id="content">
                 <h2 align="left">Ihr Kundenkonto</h2>
                 <form method="post" action="login.php">
-					Username: <input type="text" name="username" /><br /><br />
-					Password: <input type="password" name="password" /><br /><br />
-					<input type="submit" name="submit" value="Log In" />
+                    <div id="input">
+				    <label for="Benutzername">Benutzername</label>
+                    <input size="50" name="username" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte einen Benutzernamen eingeben" title="Bitte einen Benutzernamen eingeben">
+                    <br>
+                    <label for="Passwort">Passwort</label>
+                    <input size="50" name="password" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="password" placeholder="Bitte ein Passwort eingeben" title="Bitte einPasswort eingeben">
+                    <br>
+                    <br>
+                    </div>
+					<input id="login" type="submit" name="submit" value="Log In" />
 				</form>
             </div>
         </div>
     </div>
-    <div id="footer">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+    <div id="footer">Diese Webseite wurde mithilfe der Webtechnologien <a href="https://de.wikipedia.org/wiki/HTML5" style="color: #00aedb; text-decoration: none">HTML5</a>, <a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets" style="color: #00aedb; text-decoration: none">CSS3</a>, <a href="https://de.wikipedia.org/wiki/JavaScript" style="color: #00aedb; text-decoration: none">Javascript</a> und <a href="https://de.wikipedia.org/wiki/JQuery" style="color: #00aedb; text-decoration: none">JQuery</a> erstellt.</div>
 </body>
 
 </html>
