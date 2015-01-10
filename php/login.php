@@ -4,11 +4,12 @@ include_once 'mysql_connect.php';
 
 if (isset($_POST['username'])) {
 	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$password_clear = $_POST['password'];
+	$password = md5 ($password_clear);
 	$sql = "SELECT * FROM users WHERE user_nickname='".$username."' AND user_password='".$password."' LIMIT 1";
 	$res = mysql_query($sql);
 	if (mysql_num_rows($res) == 1) {
-		echo "Successfully logged in.";
+		echo "Login successful";
 		exit();
 	} else {
 		echo "Invalid login";
