@@ -10,7 +10,26 @@
 <?php
 
 	include_once 'mysql_connect.php';
-	$sql = mysql_query ('SELECT * FROM articles') or die (mysql_error());
+	$sql = mysql_query ('SELECT 
+		a.article_ID, 
+		a.article_title,
+        d.director_firstname,
+        g.genre_name,
+        a.article_runtime,
+        p.publisher_name,
+        ag.agelimit_name,
+        a.article_releasedate,
+        a.article_publishingdate,
+        a.article_amount,
+        a.article_rentprice,
+        a.article_purchaseprice
+FROM
+		articles a, directors d, publishers p, genres g, agelimits ag
+WHERE
+		a.article_director = d.directors_ID AND
+		a.article_genre = g.genre_ID AND
+		a.article_publisher = p.publisher_ID AND
+		a.article_agelimit = ag.agelimit_ID') or die (mysql_error());
 ?>
 
 <script type="text/javascript">
@@ -80,11 +99,11 @@
 				while($row = mysql_fetch_array($sql)) {
 					echo "<tr>";
 					echo "<td>" . $row['article_title'] . "</td>";
-					echo "<td>" . $row['article_director'] . "</td>";
-					echo "<td>" . $row['article_genre'] . "</td>";
+					echo "<td>" . $row['director_firstname'] . "</td>";
+					echo "<td>" . $row['genre_name'] . "</td>";
 					echo "<td>" . $row['article_runtime'] . "</td>";
-					echo "<td>" . $row['article_publisher'] . "</td>";
-					echo "<td>" . $row['article_agelimit'] . "</td>";
+					echo "<td>" . $row['publisher_name'] . "</td>";
+					echo "<td>" . $row['agelimit_name'] . "</td>";
 					echo "<td>" . $row['article_releasedate'] . "</td>";
 					echo "<td>" . $row['article_publishingdate'] . "</td>";
 					echo "<td>" . $row['article_amount'] . "</td>";
