@@ -24,11 +24,11 @@ if(!isset($_SESSION['id']) || $_SESSION['nickname'] == ''){
             <ul>
                 <li><a href="../www/index.html">Hauptseite</a>
                 </li>
-                <li><a href="../www/sortiment.html">Unser Sortiment</a>
+                <li><a href="../php/sortiment.php">Unser Sortiment</a>
                 </li>
                 <li><a href="#">Ihr Warenkorb</a>
                 </li>
-                <li><a href="login.php">Ihr Kundenkonto</a>
+                <li><a href="../php/login.php">Ihr Kundenkonto</a>
                 </li>
             </ul>
         </div>

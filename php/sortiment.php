@@ -24,9 +24,9 @@
     <div id="container2">
         <div id="navi">
             <ul>
-                <li><a href="index.html">Hauptseite</a>
+                <li><a href="../www/index.html">Hauptseite</a>
                 </li>
-                <li><a href="sortiment.html">Unser Sortiment</a>
+                <li><a href="../php/sortiment.php">Unser Sortiment</a>
                 </li>
                 <li><a href="#">Ihr Warenkorb</a>
                 </li>
