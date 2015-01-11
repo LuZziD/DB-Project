@@ -84,29 +84,65 @@ label {
     float: left;
 }
 #input {
-font-size: 1.1em;
-width: 1000px;
+    font-size: 1.1em;
+    width: 1000px;
 }
 #submit {
-    list-style-type:    none;
-	background-color:   #ffffff;
-	border:             1px solid #00aedb;
-	display:            inline-block;
-	cursor:             pointer;
-	color:              #000000;
-	font-family:        arial;
-	font-size:          16px;
-	padding:            10px 20px;
-	text-decoration:    none;
-    
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 1px solid #00aedb;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: arial;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 #submit:hover {
-	background: #00aedb;
+    background: #00aedb;
     border-color: #000;
-    border:1px solid #000;
+    border: 1px solid #000;
 }
 #submit:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
     background: #fff;
+}
+.nav-container {
+    display: block;
+}
+:root .css3-metro-dropdown option,
+:root .css3-metro-dropdown:after,
+:root .css3-metro-dropdown::after,
+:root .css3-metro-dropdown select
+{
+    color: #000;
+} 
+:root .css3-metro-dropdown select,
+:root .css3-metro-dropdown option
+{
+    padding: 5px;
+} 
+:root .css3-metro-dropdown
+{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #00aedb;
+    margin-left: 84px;
+    margin-top: 1px;
+} 
+ :root .css3-metro-dropdown select
+{
+   height: 26px;
+   width: 248px;
+   border: 0;
+   font-family: 0.9em Sans-serif;
+   outline: 0 none;
+   display: block;
+}
+:root .css3-metro-dropdown option
+{
+    background: #fff;
+    color: #000;
 }

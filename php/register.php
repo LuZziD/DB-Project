@@ -68,6 +68,15 @@ if (($_POST['username']) != "" && ($_POST['password']) != "" && ($_POST['firstna
                         <label for="Passwort">Passwort</label>
                         <input size="50" name="password" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="password" placeholder="Bitte ein Passwort eingeben" title="Bitte einPasswort eingeben">
                         <br>
+                        Geschlecht
+                        <span class="css3-metro-dropdown">
+                            <select name="dropdown-1">
+                                <option value="0">Wählen sie ihr geschlecht aus</option>
+                                <option value="1">Mann</option>        
+                                <option value="2">Frau</option>
+                            </select>
+                        </span>
+                        <br>
                         <label for="Vorname">Vorname</label>
                         <input size="50" name="firstname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihren Vornamen eingeben" title="Bitte Ihren Vornamen eingeben">
                         <br>
