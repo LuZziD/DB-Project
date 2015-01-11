@@ -10,9 +10,9 @@ if (isset($_POST['username'])) {
 	$res = mysql_query($sql);
 	if (mysql_num_rows($res) == 1) {
 		$fetch = mysql_fetch_array($res);
-		$_SESSION['id']= $fetch['user_ID'];
+		$_SESSION['userid']= $fetch['user_ID'];
 		$_SESSION['nickname']= $fetch['user_nickname'];
-		echo "Login successful";
+		header('Location: ../php/sortiment.php');
 	} else {
 		echo "Invalid login";
 		exit();

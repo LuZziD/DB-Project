@@ -1,6 +1,6 @@
 <?php include_once 'mysql_connect.php'; 
-    if(!isset($_SESSION['id']) || $_SESSION['nickname'] == ''){
-	echo '<a href="../www/login.php"></a>';
+    if(!isset($_SESSION['userid']) || $_SESSION['userid'] == ''){
+	header('Location: ../www/login.php');
     }
 ?>
     <html>
