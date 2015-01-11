@@ -6,4 +6,5 @@ nigga do some work
 - preise müssene eingefügt werden
 - noch mehr datensätze in die db
 - noch ideen?!?
+- was soll auf der Success Register seite noch rein?
 - alles muss heute fertig werden
