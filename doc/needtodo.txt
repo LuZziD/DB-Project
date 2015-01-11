@@ -1,0 +1,9 @@
+nigga do some work
+
+- pagination bei sortiment hinzufügen
+- warenkorb
+- preis nach verleihzeit berechnen
+- preise müssene eingefügt werden
+- noch mehr datensätze in die db
+- noch ideen?!?
+- alles muss heute fertig werden
