@@ -1,10 +1,7 @@
 nigga do some work
 
-- pagination bei sortiment hinzufügen
-- warenkorb
-- preis nach verleihzeit berechnen
-- preise müssene eingefügt werden
-- noch mehr datensätze in die db
-- noch ideen?!?
-- was soll auf der Success Register seite noch rein?
-- alles muss heute fertig werden
+- warenkorb						Erstmal Sessions --> Jeff
+- preis nach verleihzeit berechnen			Maurice/Florian
+- preise müssene eingefügt werden			Maurice/Florian
+- noch mehr datensätze in die db			Jeff
+- was soll auf der Success Register seite noch rein?	Maurice
