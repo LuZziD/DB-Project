@@ -2,6 +2,7 @@ SELECT
 		a.article_ID, 
 		a.article_title,
         d.director_firstname,
+		d.director_lastname,
         g.genre_name,
         a.article_runtime,
         p.publisher_name,

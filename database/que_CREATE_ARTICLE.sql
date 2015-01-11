@@ -1,0 +1,26 @@
+INSERT INTO articles(
+		article_title,
+		article_director,
+		article_genre,
+		article_runtime,
+		article_publisher,
+		article_agelimit,
+		article_release,
+		article_publishingdate,
+		article_amount,
+		article_rentprice,
+		article_purchaseprice
+		)
+	VALUES(
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+		)
