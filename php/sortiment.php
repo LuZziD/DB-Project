@@ -1,35 +1,17 @@
-<html>
+<?php include_once 'mysql_connect.php'; 
+    if(!isset($_SESSION['id']) || $_SESSION['nickname'] == ''){
+	echo '<a href="../www/login.php"></a>';
+    }
+?>
+    <html>
 
-<head>
-    <title>Hauptseite</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="layout-sortimentphp.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-
-    <?php include_once 'mysql_connect.php'; $sql=mysql_query ( '
-	SELECT 
-		a.article_ID, 
-		a.article_title,
-        d.director_firstname,
-        g.genre_name,
-        a.article_runtime,
-        p.publisher_name,
-        ag.agelimit_name,
-        a.article_releasedate,
-        a.article_publishingdate,
-        a.article_amount,
-        a.article_rentprice,
-        a.article_purchaseprice
-FROM
-		articles a, directors d, publishers p, genres g, agelimits ag
-WHERE
-		a.article_director = d.directors_ID AND
-		a.article_genre = g.genre_ID AND
-		a.article_publisher = p.publisher_ID AND
-		a.article_agelimit = ag.agelimit_ID') or die (mysql_error()); ?>
-
+    <head>
+        <title>Hauptseite</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="layout-sortimentphp.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#example').DataTable();
@@ -57,7 +39,30 @@ WHERE
             <h2 align="left">Unser Sortiment</h2>
             </div>
             <div id="table">
-                <?php echo "<table id='example' class='display' cellspacing='0' width='100%'>
+                <?php 
+                    $sql=mysql_query ( '
+                    SELECT 
+                        a.article_ID, 
+                        a.article_title,
+                        d.director_firstname,
+                        g.genre_name,
+                        a.article_runtime,
+                        p.publisher_name,
+                        ag.agelimit_name,
+                        a.article_releasedate,
+                        a.article_publishingdate,
+                        a.article_amount,
+                        a.article_rentprice,
+                        a.article_purchaseprice
+                FROM
+                        articles a, directors d, publishers p, genres g, agelimits ag
+                WHERE
+                        a.article_director = d.directors_ID AND
+                        a.article_genre = g.genre_ID AND
+                        a.article_publisher = p.publisher_ID AND
+                        a.article_agelimit = ag.agelimit_ID') or die (mysql_error());
+
+                echo "<table id='example' class='display' cellspacing='0' width='100%'>
 				<thead>
 				<tr>
 				<th>Titel</th>
