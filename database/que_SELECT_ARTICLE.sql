@@ -1,0 +1,1 @@
+SELECT * FROM articles WHERE article_ID = 'varselectedarticle'
