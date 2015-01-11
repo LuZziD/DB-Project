@@ -112,19 +112,7 @@ label {
 .nav-container {
     display: block;
 }
-:root .css3-metro-dropdown option,
-:root .css3-metro-dropdown:after,
-:root .css3-metro-dropdown::after,
-:root .css3-metro-dropdown select
-{
-    color: #000;
-} 
-:root .css3-metro-dropdown select,
-:root .css3-metro-dropdown option
-{
-    padding: 5px;
-} 
-:root .css3-metro-dropdown
+.dropdown
 {
     position: relative;
     display: inline-block;
@@ -132,16 +120,15 @@ label {
     margin-left: 84px;
     margin-top: 1px;
 } 
- :root .css3-metro-dropdown select
+.dropdown select
 {
    height: 26px;
    width: 248px;
    border: 0;
    font-family: 0.9em Sans-serif;
-   outline: 0 none;
    display: block;
 }
-:root .css3-metro-dropdown option
+.dropdown option
 {
     background: #fff;
     color: #000;
