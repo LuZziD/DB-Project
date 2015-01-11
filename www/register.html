@@ -1,0 +1,78 @@
+
+
+<html>
+
+<head>
+    <title>Registrierung</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../php/layout-registerphp.css" type="text/css" />
+    <script src="jquery-2.1.3.min.js"></script>
+</head>
+
+<body>
+    <div id="head">
+        Registrierung
+    </div>
+    <div id="container2">
+        <div id="navi">
+            <ul>
+                <li><a href="../www/index.html">Hauptseite</a>
+                </li>
+                <li><a href="../www/sortiment.html">Unser Sortiment</a>
+                </li>
+                <li><a href="#">Ihr Warenkorb</a>
+                </li>
+                <li><a href="../php/login.php">Ihr Kundenkonto</a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="content">
+                <!-- Hier fehlt noch die salutation, bitte adden -->
+                <h2 align="left">Registrierung</h2>
+                <form method="post" action="../php/register.php">
+                    <div id="input">
+						<label for="Benutzername">Benutzername</label>
+                        <input size="50" name="username" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte einen Benutzernamen eingeben" title="Bitte einen Benutzernamen eingeben">
+                        <br>
+                        <label for="Passwort">Passwort</label>
+                        <input size="50" name="password" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="password" placeholder="Bitte ein Passwort eingeben" title="Bitte einPasswort eingeben">
+                        <br>
+                        Geschlecht
+                        <span class="dropdown">
+                            <select name="dropdown-1">
+                                <option value="0">Wählen sie ihr geschlecht aus</option>
+                                <option value="1">Mann</option>        
+                                <option value="2">Frau</option>
+                            </select>
+                        </span>
+                        <br>
+                        <label for="Vorname">Vorname</label>
+                        <input size="50" name="firstname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihren Vornamen eingeben" title="Bitte Ihren Vornamen eingeben">
+                        <br>
+                        <label for="Nachname">Nachname</label>
+                        <input size="50" name="lastname" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihren Nachnamen eingeben" title="Bitte Ihren Nachnamen eingeben">
+                        <br>
+                        <label for="E-Mail Adresse">E-Mail Adresse</label>
+                        <input size="50" name="email" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihre E-Mail Adresse eingeben" title="Bitte ihre E-Mail Adresse eingeben">
+                        <br>
+                        <label for="Hausnummer">Hausnummer</label>
+                        <input size="50" name="housenumber" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihre Hausnummer eingeben" title="Bitte Ihre Hausnummer eingeben">
+                        <br>
+                        <label for="Stadt">Stadt</label>
+                        <input size="50" name="city" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihre Stadt eingeben" title="Bitte Ihre Stadt eingeben">
+                        <br>
+                        <label for="Land">Land</label>
+                        <input size="50" name="country" style="color:#000;font-family:Arial;font-size:12px;border: 1px solid #00aedb;background-color:#FFFFFF;height:20px;padding:5px;width:250px;" type="Text" placeholder="Bitte ihr Land eingeben" title="Bitte Ihr Land eingeben">
+                        <br>
+                        <br>
+                        </div>                  
+				<input id="submit" type="submit" name="submit" value="Benutzerkonto erstellen" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">Diese Webseite wurde mithilfe der Webtechnologien <a href="https://de.wikipedia.org/wiki/HTML5" style="color: #00aedb; text-decoration: none">HTML5</a>, <a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets" style="color: #00aedb; text-decoration: none">CSS3</a>, <a href="https://de.wikipedia.org/wiki/JavaScript" style="color: #00aedb; text-decoration: none">Javascript</a> und <a href="https://de.wikipedia.org/wiki/JQuery" style="color: #00aedb; text-decoration: none">JQuery</a> erstellt.</div>
+</body>
+
+</html>
