@@ -8,7 +8,7 @@
     <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 
-    <?php include_once 'mysql_connect.php'; $sql=m ysql_query ( 'SELECT * FROM articles') or die (mysql_error()); ?>
+    <?php include_once 'mysql_connect.php'; $sql=mysql_query ( 'SELECT * FROM articles') or die (mysql_error()); ?>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -69,7 +69,7 @@
 				<th>Kaufpreis</th>
 				</tr>
 				</tfoot>
-				<tbody>"; while($row=m ysql_fetch_array($sql)) { echo "<tr>"; echo "<td>" . $row[ 'article_title'] . "</td>"; echo "<td>" . $row[ 'article_director'] . "</td>"; echo "<td>" . $row[ 'article_genre'] . "</td>"; echo "<td>" . $row[ 'article_runtime'] . "</td>"; echo "<td>" . $row[ 'article_publisher'] . "</td>"; echo "<td>" . $row[ 'article_agelimit'] . "</td>"; echo "<td>" . $row[ 'article_releasedate'] . "</td>"; echo "<td>" . $row[ 'article_publishingdate'] . "</td>"; echo "<td>" . $row[ 'article_amount'] . "</td>"; echo "<td>" . $row[ 'article_rentprice'] . "</td>"; echo "<td>" . $row[ 'article_purchaseprice'] . "</td>"; echo "</tr>"; } echo "</tbody>"; echo "</table>"; ?>
+				<tbody>"; while($row=mysql_fetch_array($sql)) { echo "<tr>"; echo "<td>" . $row[ 'article_title'] . "</td>"; echo "<td>" . $row[ 'article_director'] . "</td>"; echo "<td>" . $row[ 'article_genre'] . "</td>"; echo "<td>" . $row[ 'article_runtime'] . "</td>"; echo "<td>" . $row[ 'article_publisher'] . "</td>"; echo "<td>" . $row[ 'article_agelimit'] . "</td>"; echo "<td>" . $row[ 'article_releasedate'] . "</td>"; echo "<td>" . $row[ 'article_publishingdate'] . "</td>"; echo "<td>" . $row[ 'article_amount'] . "</td>"; echo "<td>" . $row[ 'article_rentprice'] . "</td>"; echo "<td>" . $row[ 'article_purchaseprice'] . "</td>"; echo "</tr>"; } echo "</tbody>"; echo "</table>"; ?>
             </div>
         </div>
     </div>
