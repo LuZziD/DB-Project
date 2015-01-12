@@ -1,0 +1,1 @@
+DROP * FROM directors WHERE director_ID = 'vardirector'

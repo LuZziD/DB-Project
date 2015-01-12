@@ -1,0 +1,1 @@
+UPDATE SET directors.director_firstname = 'varfirstname', directors.director_lastname = 'varlastname' WHERE directors.director_ID = "varid"

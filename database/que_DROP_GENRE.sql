@@ -1,0 +1,1 @@
+DROP * FROM genres WHERE genre_ID = 'vardeletegenre'

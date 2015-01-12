@@ -1,8 +1,8 @@
 SELECT 
-		a.article_ID, 
-		a.article_title,
+	a.article_ID, 
+	a.article_title,
         d.director_firstname,
-		d.director_lastname,
+	d.director_lastname,
         g.genre_name,
         a.article_runtime,
         p.publisher_name,
@@ -13,9 +13,9 @@ SELECT
         a.article_rentprice,
         a.article_purchaseprice
 FROM
-		articles a, directors d, publishers p, genres g, agelimits ag
+	articles a, directors d, publishers p, genres g, agelimits ag
 WHERE
-		a.article_director = d.directors_ID AND
-		a.article_genre = g.genre_ID AND
-		a.article_publisher = p.publisher_ID AND
-		a.article_agelimit = ag.agelimit_ID
+	a.article_director = d.directors_ID AND
+	a.article_genre = g.genre_ID AND
+	a.article_publisher = p.publisher_ID AND
+	a.article_agelimit = ag.agelimit_ID

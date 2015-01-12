@@ -17,10 +17,6 @@ salutations
 	-ID
 	-name
 
-countrys
-	-ID
-	-name
-
 roles
 	-ID
 	-name

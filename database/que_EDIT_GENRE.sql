@@ -1,0 +1,1 @@
+UPDATE SET genres.genre_name = 'vargenrename' WHERE genres.genre_ID = 'vargenreidtoedit'

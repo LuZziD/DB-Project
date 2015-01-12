@@ -1,0 +1,1 @@
+UPDATE SET publishers.publisher_name = 'varpublisher' WHERE publishers.publisher_ID = 'varid'

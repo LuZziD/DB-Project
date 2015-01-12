@@ -1,6 +1,4 @@
-SELECT * FROM articles WHERE (article_ID) = 'varID'(
-	
-		CASE
+CASE
 			WHEN 'vartitle' = ''
 			THEN 'vartitle' SELECT article_title FROM articles
 			WHEN 'vardirector' = ''
@@ -24,29 +22,16 @@ SELECT * FROM articles WHERE (article_ID) = 'varID'(
 			WHEN 'varpurchaseprice' = ''
 			THEN 'varpurchaseprice' SELECT article_purchaseprice FROM articles
 			)
-		INSERT INTO articles(
-			article_title,
-			article_director, 
-			article_genre,
-			article_runtime,
-			article_publisher,
-			article_agelimit,
-			article_releasedate,
-			article_publishingdate,
-			article_amount,
-			article_rentprice,
-			article_purchaseprice
-			)
-		VALUES(
-			'vartitle',
-			'vardirector',
-			'vargenre',
-			'varruntime',
-			'varpublisher',
-			'varagelimit',
-			'varreleasedate',
-			'varpublishingdate',
-			'varamount',
-			'varrentprice',
-			'varpurchaseprice'
-			)
+		UPDATE SET articles 
+			articles.article_title = 'vartitle',
+			articles.article_director = 'vardirector', 
+			articles.article_genre = 'vargenre',
+			articles.article_runtime = 'varruntime',
+			articles.article_publisher = 'varpublisher',
+			articles.article_agelimit = 'varagelimit',
+			articles.article_releasedate = 'varreleasedate',
+			articles.article_publishingdate = 'varpublishingdate',
+			articles.article_amount = 'varamount',
+			articles.article_rentprice = 'varrentprice',
+			articles.article_purchaseprice = 'varpurchaseprice
+WHERE articles.article_ID = 'varID'

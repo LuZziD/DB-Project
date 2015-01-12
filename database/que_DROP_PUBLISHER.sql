@@ -1,0 +1,1 @@
+DROP * FROM publishers WHERE publisher_ID = 'vardeletepublisher'
