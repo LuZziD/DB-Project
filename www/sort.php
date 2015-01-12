@@ -2,9 +2,10 @@
 
 <head>
     <title>Hauptseite</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="layout-shit.css" type="text/css" />
+    <link rel="stylesheet" href="layout-sort.css" type="text/css" />
     <script type="text/javascript" src="TableSort.js"></script>
+	
+	<?php include_once '../php/mysql_connect.php'; ?>
 </head>
 
 <body>
@@ -69,22 +70,6 @@
 				<th>Kaufpreis</th>
 				</tr>
 				</thead>
-				
-				<tfoot>
-				<tr>
-				<th>Titel</th>
-				<th>Director</th>
-				<th>Genre</th>
-				<th>Dauer</th>
-				<th>Publisher</th>
-				<th>FSK</th>
-				<th>Release</th>
-				<th>Publishing</th>
-				<th>Menge</th>
-				<th>Mietpreis</th>
-				<th>Kaufpreis</th>
-				</tr>
-				</tfoot>
 				<tbody>"; while($row=mysql_fetch_array($sql)) { echo "<tr>"; echo "<td>" . $row[ 'article_title'] . "</td>"; echo "<td>" . $row[ 'director_firstname'] . "</td>"; echo "<td>" . $row[ 'genre_name'] . "</td>"; echo "<td>" . $row[ 'article_runtime'] . "</td>"; echo "<td>" . $row[ 'publisher_name'] . "</td>"; echo "<td>" . $row[ 'agelimit_name'] . "</td>"; echo "<td>" . $row[ 'article_releasedate'] . "</td>"; echo "<td>" . $row[ 'article_publishingdate'] . "</td>"; echo "<td>" . $row[ 'article_amount'] . "</td>"; echo "<td>" . $row[ 'article_rentprice'] . "</td>"; echo "<td>" . $row[ 'article_purchaseprice'] . "</td>"; echo "</tr>"; } echo "</tbody>"; echo "</table>"; ?>
 
             </div>
